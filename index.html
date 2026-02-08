@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureTech | Premium Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="blur-bg"></div>
+    <div class="container">
+        <header>
+            <div class="logo">NEXT<span>GEN</span></div>
+            <div class="search-wrapper">
+                <input type="text" id="searchBar" placeholder="Search premium tech...">
+            </div>
+            <nav class="filters">
+                <button class="filter-btn active" data-cat="all">All Items</button>
+                <button class="filter-btn" data-cat="Audio">Audio</button>
+                <button class="filter-btn" data-cat="Wearables">Wearables</button>
+                <button class="filter-btn" data-cat="Computing">Computing</button>
+            </nav>
+        </header>
+
+        <main id="productGrid" class="product-grid">
+        </main>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="logo">NEXT<span>GEN</span></div>
+                <p>Defining the future of technology since 2026. Premium gear for the digital nomad.</p>
+                <div class="social-links">
+                    <a href="#">FB</a>
+                    <a href="#">IG</a>
+                    <a href="#">TW</a>
+                    <a href="#">LI</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#" onclick="filterByCat('Computing')">Computing</a></li>
+                    <li><a href="#" onclick="filterByCat('Audio')">Audio</a></li>
+                    <li><a href="#" onclick="filterByCat('Wearables')">Wearables</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Stay Updated</h4>
+                <p>Subscribe for exclusive tech deals.</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="Your email">
+                    <button class="sub-btn">Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NEXTGEN Tech Gallery.</p>
+        </div>
+    </footer>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
